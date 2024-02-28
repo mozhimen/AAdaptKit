@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ThemeK_SplashScreen" parent="Theme.SplashScreen">
+        <!--  开屏页面底色-->
+        <item name="windowSplashScreenBackground">@color/cok_white</item>
+        <!--  开屏icon-->
+        <!--<item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>-->
+        <!--  停留-->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!--  原来主题-->
+        <item name="postSplashScreenTheme">@style/ThemeK_AppLightNoAction.FullScreen</item>
+    </style>
+</resources>

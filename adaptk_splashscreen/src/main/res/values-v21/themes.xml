@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ThemeK_SplashScreen_Base" parent="android:Theme.NoTitleBar">
+        <item name="android:windowBackground" tools:ignore="PrivateResource">@drawable/compat_splash_screen</item>
+        <item name="android:opacity">opaque</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
