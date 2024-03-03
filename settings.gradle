@@ -30,3 +30,4 @@ include ':SwiftKit:basick'
 include ':SwiftKit:uicorek'
 
 include ':adaptk_splashscreen'
+include ':adaptk_dynamic_colors'
