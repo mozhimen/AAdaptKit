@@ -28,7 +28,7 @@ import com.mozhimen.basick.utilk.kotlin.int2boolean
  * //高级用法自己组合
  * @ASenseKSystemBarProperty(CProperty.NORMAL)
  * @ASenseKSystemBarPropertyOr(CPropertyOr.IMMERSED_OPEN, CPropertyOr.HIDE_STATUS_BAR, CPropertyOr.HIDE_NAVIGATION_BAR)
- * class SystemBarActivity : BaseActivityVB<ActivitySensekSystembarBinding>() {
+ * class SystemBarActivity : BaseActivityVDB<ActivitySensekSystembarBinding>() {
  *     override fun initFlag() {
  *         initSenseKSystemBar()
  *     }

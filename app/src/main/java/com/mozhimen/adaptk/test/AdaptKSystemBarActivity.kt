@@ -1,6 +1,6 @@
 package com.mozhimen.adaptk.test
 
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVB
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarProperty
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarPropertyOr
 import com.mozhimen.adaptk.systembar.cons.CProperty
@@ -13,7 +13,7 @@ import com.mozhimen.adaptk.test.databinding.ActivityAdaptkSystembarBinding
 //高级用法自己组合
 @AAdaptKSystemBarProperty(CProperty.NORMAL)
 @AAdaptKSystemBarPropertyOr(CPropertyOr.IMMERSED_OPEN, CPropertyOr.HIDE_STATUS_BAR, CPropertyOr.HIDE_NAVIGATION_BAR)
-class AdaptKSystemBarActivity : BaseActivityVB<ActivityAdaptkSystembarBinding>() {
+class AdaptKSystemBarActivity : BaseActivityVDB<ActivityAdaptkSystembarBinding>() {
     override fun initFlag() {
         initAdaptKSystemBar()
     }
