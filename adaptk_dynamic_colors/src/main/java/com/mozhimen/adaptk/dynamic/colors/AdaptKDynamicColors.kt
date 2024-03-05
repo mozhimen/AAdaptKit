@@ -4,7 +4,7 @@ import android.annotation.TargetApi
 import android.app.Application
 import com.google.android.material.color.DynamicColors
 import com.mozhimen.basick.elemk.android.os.cons.CVersCode
-import com.mozhimen.uicorek.optins.OTheme_ThemeMaterial3DayNoAction
+import com.mozhimen.xmlk.optins.OTheme_ThemeMaterial3DayNoAction
 
 /**
  * @ClassName AdaptKDynamicColors

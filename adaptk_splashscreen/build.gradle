@@ -32,7 +32,7 @@ android {
 dependencies {
 
     implementation project(':SwiftKit:basick')
-    implementation project(':SwiftKit:uicorek')
+    implementation project(':SwiftKit:xmlk')
     api 'androidx.core:core-splashscreen:1.1.0-alpha01'
 
     testImplementation 'junit:junit:4.13.2'

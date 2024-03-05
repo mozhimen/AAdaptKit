@@ -1,4 +1,4 @@
-//package com.mozhimen.uicorek.adaptk.autosize
+//package com.mozhimen.xmlk.adaptk.autosize
 //
 //import android.app.Activity
 //import android.util.Log

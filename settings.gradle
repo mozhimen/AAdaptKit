@@ -27,7 +27,7 @@ include ':adaptk_systembar'
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("C:\\Users\\${System.getenv().get("USERNAME")}\\Documents\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
-include ':SwiftKit:uicorek'
+include ':SwiftKit:xmlk'
 
 include ':adaptk_splashscreen'
 include ':adaptk_dynamic_colors'

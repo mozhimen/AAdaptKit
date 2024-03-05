@@ -1,4 +1,4 @@
-package com.mozhimen.adaptk.autosize.helpers//package com.mozhimen.uicorek.adaptk.autosize.helpers
+package com.mozhimen.adaptk.autosize.helpers//package com.mozhimen.xmlk.adaptk.autosize.helpers
 //
 //import android.content.Context
 //import android.content.ContextWrapper
@@ -6,7 +6,7 @@ package com.mozhimen.adaptk.autosize.helpers//package com.mozhimen.uicorek.adapt
 //import com.mozhimen.basick.lintk.optin.ALintKOptIn_ApiDeclare_InManifest
 //import com.mozhimen.basick.lintk.optin.ALintKOptIn_ApiInit_InApplication
 //import com.mozhimen.basick.utilk.android.content.UtilKConfiguration
-//import com.mozhimen.uicorek.adaptk.autosize.AdaptKAutoSize
+//import com.mozhimen.xmlk.adaptk.autosize.AdaptKAutoSize
 //import me.jessyan.autosize.AutoSizeCompat
 //
 //

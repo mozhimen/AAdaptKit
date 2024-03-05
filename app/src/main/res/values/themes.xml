@@ -7,7 +7,7 @@
 
     <style name="Theme.AAdaptKit" parent="Base.Theme.AAdaptKit" />
 
-    <style name="UicoreKStyle_Btn" parent="StyleK_MaterialBtn">
+    <style name="XmlKStyle_Btn" parent="StyleK_MaterialBtn">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginHorizontal" tools:targetApi="o">20dp</item>
     </style>
