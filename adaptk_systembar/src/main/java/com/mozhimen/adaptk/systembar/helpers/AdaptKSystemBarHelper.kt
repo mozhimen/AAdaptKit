@@ -9,7 +9,6 @@ import com.mozhimen.basick.utilk.android.view.UtilKSystemBar
  * @ClassName SenseKSystemBarHelper
  * @Description TODO
  * @Author Mozhimen & Kolin Zhao
- * @Date 2023/6/29 15:34
  * @Version 1.0
  */
 internal object AdaptKSystemBarHelper {

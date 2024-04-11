@@ -14,7 +14,6 @@ package com.mozhimen.adaptk.autosize.helpers//package com.mozhimen.xmlk.adaptk.a
 // * @ClassName AdaptK
 // * @Description TODO
 // * @Author Mozhimen & Kolin Zhao
-// * @Date 2022/12/16 14:17
 // * @Version 1.0
 // */
 //object AdaptKHelper {

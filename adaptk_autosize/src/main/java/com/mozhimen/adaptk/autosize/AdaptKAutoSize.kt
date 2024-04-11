@@ -17,7 +17,6 @@
 // * @ClassName AdaptKMgr
 // * @Description TODO
 // * @Author Mozhimen & Kolin Zhao
-// * @Date 2022/12/16 14:11
 // * @Version 1.0
 // */
 //@OMetaData_DESIGN_WIDTH_IN_DP

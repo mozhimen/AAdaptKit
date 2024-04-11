@@ -4,7 +4,6 @@ package com.mozhimen.adaptk.systembar.cons
  * @ClassName CPropertyOr
  * @Description TODO
  * @Author Mozhimen & Kolin Zhao
- * @Date 2023/7/3 15:00
  * @Version 1.0
  */
 object CPropertyOr {

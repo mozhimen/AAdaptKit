@@ -7,7 +7,6 @@ import com.mozhimen.adaptk.systembar.cons.CPropertyOr
  * @ClassName StatusBarKType
  * @Description TODO
  * @Author mozhimen / Kolin Zhao
- * @Date 2022/7/17 17:41
  * @Version 1.0
  */
 @IntDef(
