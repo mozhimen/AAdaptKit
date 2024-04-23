@@ -2,6 +2,7 @@
 //
 //import android.app.Activity
 //import android.util.Log
+import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
 //import com.mozhimen.basick.lintk.optin.ALintKO_ApiDeclare_InManifest
 //import com.mozhimen.basick.lintk.optin.ALintKO_ApiInit_InApplication
 //import com.mozhimen.basick.manifestk.cons.CMetaData
@@ -57,7 +58,7 @@
 //     * @param width Int 设备的宽
 //     */
 //    fun init(length: Int = _length, width: Int = _width) {
-//        Log.d(TAG, "init: length $length width $width")
+//        UtilKLogWrapper.d(TAG, "init: length $length width $width")
 //        AutoSizeConfig.getInstance().onAdaptListener = object : onAdaptListener {
 //            override fun onAdaptBefore(target: Any, activity: Activity) {
 //                AutoSizeConfig.getInstance().screenWidth = length
