@@ -9,6 +9,7 @@ android {
 
     defaultConfig {
         minSdk 19
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -30,10 +31,9 @@ android {
 }
 
 dependencies {
-
     implementation project(':SwiftKit:basick')
     implementation project(':SwiftKit:xmlk')
-    api 'androidx.core:core-splashscreen:1.1.0-alpha01'
+    implementation project(':ALibKit_Jetpack:core_splashscreen')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

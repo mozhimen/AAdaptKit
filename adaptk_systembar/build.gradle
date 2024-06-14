@@ -31,7 +31,6 @@ android {
 }
 
 dependencies {
-
     implementation project(':SwiftKit:basick')
 
     testImplementation 'junit:junit:4.13.2'
