@@ -39,3 +39,4 @@ include ':ALibKit_Jetpack:preference'
 include ':ALibKit_Jetpack:core_splashscreen'
 
 
+include ':adaptk_splashscreen_test'

@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ThemeK_SplashScreen" parent="Theme.SplashScreen">
-        <!--  开屏页面底色-->
-        <item name="windowSplashScreenBackground">@color/cok_white</item>
+    <style name="ThemeK_SplashScreen" parent="Theme.SplashScreen" />
+
+    <style name="ThemeK_SplashScreen.Basic">
+        <!--开屏页面底色-->
+        <!--单一颜色填充「启动画面」窗口背景-->
+        <!--        <item name="windowSplashScreenBackground">@color/...</item>-->
+
         <!--  开屏icon-->
-        <!--<item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>-->
+        <!--「启动画面」中心的图标，
+             可以配置AnimationDrawable 和 AnimatedVectorDrawable类型的drawable-->
+        <!--        <item name="windowSplashScreenAnimatedIcon">@drawable/...</item>-->
+
         <!--  停留-->
-        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!--「启动画面」中心图标动画的持续时间，这个属性不会对屏幕显示的实际时间产生任何影响-->
+        <!--        <item name="windowSplashScreenAnimationDuration">1000</item>-->
+
         <!--  原来主题-->
-        <item name="postSplashScreenTheme">@style/ThemeK_AppLightNoAction.FullScreen</item>
+        <!--<item name="postSplashScreenTheme">@style/ThemeK_AppLightNoAction.FullScreen</item>-->
+
+        <!--「启动画面」中心图标后面设置背景-->
+        <!--        <item name="windowSplashScreenIconBackgroundColor">@color/...</item>-->
     </style>
 </resources>
