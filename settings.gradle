@@ -27,6 +27,7 @@ include ':adaptk_splashscreen'
 include ':adaptk_dynamic_colors'
 include ':adaptk_preference'
 include ':adaptk_screen'
+include ':adaptk_splashscreen_test'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
@@ -37,6 +38,8 @@ include ':ALibKit_Jetpack'
 project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
 include ':ALibKit_Jetpack:preference'
 include ':ALibKit_Jetpack:core_splashscreen'
+//AAnimKit
+include ':AAnimKit'
+project(':AAnimKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AAnimKit")
+include ':AAnimKit:animk'
 
-
-include ':adaptk_splashscreen_test'

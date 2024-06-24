@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="ThemeK_SplashScreen.Basic" parent="ThemeK_SplashScreen">
         <!-- values-v31/themes.xml -->
-        <!--单一颜色填充「启动画面」窗口背景-->
-<!--        <item name="android:windowSplashScreenBackground">@color/...</item>-->
-
-        <!--「启动画面」中心的图标，
-             可以配置AnimationDrawable 和 AnimatedVectorDrawable类型的drawable-->
-<!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/...</item>-->
-
-        <!--「启动画面」中心图标动画的持续时间，这个属性不会对屏幕显示的实际时间产生任何影响-->
-<!--        <item name="android:windowSplashScreenAnimationDuration">1000</item>-->
-
         <!--「启动画面」中心图标后面设置背景-->
-<!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/...</item>-->
+        <!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/...</item>-->
 
         <!--「启动画面」底部显示的品牌图标-->
-<!--        <item name="android:windowSplashScreenBrandingImage">@drawable/...</item> </style>-->
+        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/...</item> </style>-->
+    </style>
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <!--Android10.0系统效果还可以，这个主要是看你们产品怎么设计了-->
+    <!--不建议使用：SplashScreen兼容库，动画图标，android5.0 ~ android11，系统版本太低，有些系统表现效果不理想-->
+    <style name="ThemeK_SplashScreen_IconBackground.Dynamic">
+        <!--「启动画面」中心图标后面设置背景-->
+        <!--        <item name="windowSplashScreenIconBackgroundColor">@color/splash_screen_icon_background</item>-->
+
+        <!--「启动画面」底部显示的品牌图标-->
+        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_branding_image_bottom_icon</item>-->
+    </style>
+
+    <!--SplashScreen兼容库，静态背景，android5.0 ~ android11-->
+    <style name="ThemeK_SplashScreen_IconBackground.Static">
+        <!--这里主要是针对6.0以下设备，让导航栏能看清楚-->
+        <!--        <item name="android:navigationBarColor">@color/splash_screen_navigationBarColor</item>-->
+
+        <!--给父主题设置窗口背景-->
+        <!--        <item name="android:windowBackground">@drawable/ic_kuaishou_splash_screen_window_bg</item>-->
+
+        <!--「启动画面」底部显示的品牌图标-->
+        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_branding_image_bottom_icon</item>-->
     </style>
 </resources>

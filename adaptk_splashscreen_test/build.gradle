@@ -30,11 +30,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
 }
 
 dependencies {
     implementation project(':SwiftKit:basick')
+    implementation project(':SwiftKit:xmlk')
     implementation project(':adaptk_splashscreen')
+    implementation project(':AAnimKit:animk')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

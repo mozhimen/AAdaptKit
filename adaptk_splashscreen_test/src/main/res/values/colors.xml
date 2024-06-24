@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="iconMaskColor">#46485f</color>
+    <color name="iconMaskStrokeColor">#00ffffff</color>
+    <color name="iconStrokeColor">#000000</color>
+    <color name="iconFillColor">#3DDC84</color>
+
+    <color name="iconBackgroundColor">#2e2f43</color>
 </resources>

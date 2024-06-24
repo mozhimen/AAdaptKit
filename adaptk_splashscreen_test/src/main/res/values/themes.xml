@@ -6,4 +6,24 @@
     </style>
 
     <style name="Theme.AAdaptKit" parent="Base.Theme.AAdaptKit" />
+
+    <style name="Theme.AAdaptKit.SplashScreen" parent="ThemeK_SplashScreen_IconBackground">
+        <!--单一颜色填充「启动画面」窗口背景-->
+        <!--需要配置，不配置的话，启动页消失到主页显示的时候，有个过渡动画，会闪这个颜色的背景色-->
+        <item name="windowSplashScreenBackground">?attr/colorPrimaryDark</item>
+
+        <!--「启动画面」中心图标动画的持续时间，这个属性不会对屏幕显示的实际时间产生任何影响-->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+
+        <!--原来主题-->
+        <item name="postSplashScreenTheme">@style/Theme.AAdaptKit</item>
+    </style>
+
+    <style name="Theme.AAdaptKit.SplashScreen.Compact">
+        <!--这里主要是针对6.0以下设备，让导航栏能看清楚-->
+        <item name="android:navigationBarColor">?attr/colorPrimaryDark</item>
+
+        <!--给父主题设置窗口背景-->
+        <item name="android:windowBackground">?attr/colorPrimaryDark</item>
+    </style>
 </resources>

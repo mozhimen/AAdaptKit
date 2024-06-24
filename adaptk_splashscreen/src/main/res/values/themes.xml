@@ -1,26 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ThemeK_SplashScreen" parent="Theme.SplashScreen" />
+    <style name="ThemeK_SplashScreen" parent="Theme.SplashScreen">
+        <!--「启动画面」中心的图标，可以配置AnimationDrawable 和 AnimatedVectorDrawable类型的drawable-->
+        <!--使用透明的drawable替换中心图标，如果不替换在部分旧系统会展示一个机器人-->
+        <!--        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_transparent_svg</item>-->
+
+        <!--单一颜色填充「启动画面」窗口背景-->
+        <!--需要配置，不配置的话，启动页消失到主页显示的时候，有个过渡动画，会闪这个颜色的背景色-->
+        <!--        <item name="windowSplashScreenBackground">@color/window_common_background_color</item>-->
+
+        <!--「启动画面」中心图标动画的持续时间，这个属性不会对屏幕显示的实际时间产生任何影响-->
+        <!--        <item name="windowSplashScreenAnimationDuration">200</item>-->
+
+        <!--原来主题-->
+        <!--        <item name="postSplashScreenTheme">@style/Theme.App</item>-->
+    </style>
+
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
 
     <style name="ThemeK_SplashScreen.Basic">
-        <!--开屏页面底色-->
-        <!--单一颜色填充「启动画面」窗口背景-->
-        <!--        <item name="windowSplashScreenBackground">@color/...</item>-->
-
-        <!--  开屏icon-->
-        <!--「启动画面」中心的图标，
-             可以配置AnimationDrawable 和 AnimatedVectorDrawable类型的drawable-->
-        <!--        <item name="windowSplashScreenAnimatedIcon">@drawable/...</item>-->
-
-        <!--  停留-->
-        <!--「启动画面」中心图标动画的持续时间，这个属性不会对屏幕显示的实际时间产生任何影响-->
-        <!--        <item name="windowSplashScreenAnimationDuration">1000</item>-->
-
-        <!--  原来主题-->
-        <!--<item name="postSplashScreenTheme">@style/ThemeK_AppLightNoAction.FullScreen</item>-->
-
         <!--「启动画面」中心图标后面设置背景-->
         <!--        <item name="windowSplashScreenIconBackgroundColor">@color/...</item>-->
     </style>
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <style name="ThemeK_SplashScreen_IconBackground" parent="Theme.SplashScreen.IconBackground">
+        <!--「启动画面」中心的图标，可以配置AnimationDrawable 和 AnimatedVectorDrawable类型的drawable-->
+        <!--使用透明的drawable替换中心图标，如果不替换在部分旧系统会展示一个机器人-->
+        <!--        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_transparent_svg</item>-->
+
+        <!--单一颜色填充「启动画面」窗口背景-->
+        <!--需要配置，不配置的话，启动页消失到主页显示的时候，有个过渡动画，会闪这个颜色的背景色-->
+        <!--        <item name="windowSplashScreenBackground">@color/window_common_background_color</item>-->
+
+        <!--「启动画面」中心图标动画的持续时间，这个属性不会对屏幕显示的实际时间产生任何影响-->
+        <!--        <item name="windowSplashScreenAnimationDuration">200</item>-->
+
+        <!--原来主题-->
+        <!--        <item name="postSplashScreenTheme">@style/Theme.App</item>-->
+    </style>
+
+    <!--////////////////////////////////////////////////////////////////////////////-->
+
+    <!--Android10.0系统效果还可以，这个主要是看你们产品怎么设计了-->
+    <!--不建议使用：SplashScreen兼容库，动画图标，android5.0 ~ android11，系统版本太低，有些系统表现效果不理想-->
+    <style name="ThemeK_SplashScreen_IconBackground.Dynamic">
+
+        <!--「启动画面」中心图标后面设置背景-->
+        <!--        <item name="windowSplashScreenIconBackgroundColor">@color/splash_screen_icon_background</item>-->
+    </style>
+
+    <!--SplashScreen兼容库，静态背景，android5.0 ~ android11-->
+    <style name="ThemeK_SplashScreen_IconBackground.Static">
+        <!--这里主要是针对6.0以下设备，让导航栏能看清楚-->
+        <!--        <item name="android:navigationBarColor">@color/splash_screen_navigationBarColor</item>-->
+
+        <!--给父主题设置窗口背景-->
+        <!--        <item name="android:windowBackground">@drawable/ic_kuaishou_splash_screen_window_bg</item>-->
+    </style>
+
 </resources>
