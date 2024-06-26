@@ -3,10 +3,12 @@ package com.mozhimen.adaptk.splashscreen.utils
 import android.animation.Animator
 import android.os.SystemClock
 import android.view.View
+import android.view.ViewTreeObserver
 import androidx.core.splashscreen.SplashScreen
 import androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition
 import androidx.core.splashscreen.SplashScreenViewProvider
 import androidx.core.view.postDelayed
+import com.mozhimen.basick.elemk.commons.I_AListener
 import com.mozhimen.basick.utilk.android.os.UtilKBuildVersion
 import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
 import com.mozhimen.basick.utilk.commons.IUtilK
@@ -20,9 +22,25 @@ import com.mozhimen.basick.utilk.commons.IUtilK
  */
 object AdaptKSplashscreenUtil : IUtilK {
     // Keep splash screen showing till data initialized.
-    fun keepSplashScreenLonger(splashScreen: SplashScreen,condition: KeepOnScreenCondition) {
+    fun keepSplashScreenLonger(splashScreen: SplashScreen, condition: KeepOnScreenCondition) {
         UtilKLogWrapper.d(TAG, "SplashActivity#keepSplashScreenLonger()")
         splashScreen.setKeepVisibleCondition(condition)
+    }
+
+    fun keepSplashScreenLonger(contentView: View, onLoadFinish: I_AListener<Boolean>) {
+        //让启动画面在屏幕上停留更长时间
+        contentView.viewTreeObserver.addOnPreDrawListener(object :
+            ViewTreeObserver.OnPreDrawListener {
+            override fun onPreDraw(): Boolean =
+                when {
+                    onLoadFinish.invoke()/*mainViewModel.mockDataLoading()*/ -> {
+                        contentView.viewTreeObserver.removeOnPreDrawListener(this)
+                        true
+                    }
+
+                    else -> false
+                }
+        })
     }
 
     //add ad
@@ -71,7 +89,7 @@ object AdaptKSplashscreenUtil : IUtilK {
             .coerceAtLeast(0L)
     }
 
-   fun waitForAnimatedIconAnimationToFinish(splashScreenViewProvider: SplashScreenViewProvider, view: View, animator: Animator) {
+    fun waitForAnimatedIconAnimationToFinish(splashScreenViewProvider: SplashScreenViewProvider, view: View, animator: Animator) {
         val delayMillis: Long = (splashScreenViewProvider.iconAnimationStartMillis + splashScreenViewProvider.iconAnimationDurationMillis) - System.currentTimeMillis()
         view.postDelayed(delayMillis) { animator.start() }
     }

@@ -3,10 +3,10 @@
 
     <style name="Theme.AAdaptKit.SplashScreen.Compact">
         <!-- animated icon -->
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/avd_anim</item>
 
         <!-- icon background color-->
-        <item name="android:windowSplashScreenIconBackgroundColor">?attr/colorPrimaryDark</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/white</item>
 
         <!-- brand image-->
         <item name="android:windowSplashScreenBrandingImage">@drawable/ic_launcher_foreground</item>

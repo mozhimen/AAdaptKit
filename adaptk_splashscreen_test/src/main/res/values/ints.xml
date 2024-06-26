@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- integer.xml - timing values for the animation (milliseconds) -->
+    <integer name="fab_ripple_explode_duration">500</integer>
+    <integer name="fab_ripple_scale_down_duration">500</integer>
+    <integer name="fab_ripple_scale_down_factor">4</integer>
+    <integer name="fab_ripple_translate_duration">1000</integer>
+    <integer name="fab_ripple_icon_fade_duration">200</integer>
+</resources>

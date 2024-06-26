@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AAdaptKit" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.AAdaptKit" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
@@ -8,6 +8,8 @@
     <style name="Theme.AAdaptKit" parent="Base.Theme.AAdaptKit" />
 
     <style name="Theme.AAdaptKit.SplashScreen" parent="ThemeK_SplashScreen_IconBackground">
+        <!-- animated icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <!--单一颜色填充「启动画面」窗口背景-->
         <!--需要配置，不配置的话，启动页消失到主页显示的时候，有个过渡动画，会闪这个颜色的背景色-->
         <item name="windowSplashScreenBackground">?attr/colorPrimaryDark</item>
@@ -15,8 +17,11 @@
         <!--「启动画面」中心图标动画的持续时间，这个属性不会对屏幕显示的实际时间产生任何影响-->
         <item name="windowSplashScreenAnimationDuration">1000</item>
 
+        <item name="splashScreenIconSize">120dp</item>
+
         <!--原来主题-->
         <item name="postSplashScreenTheme">@style/Theme.AAdaptKit</item>
+
     </style>
 
     <style name="Theme.AAdaptKit.SplashScreen.Compact">

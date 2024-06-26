@@ -8,4 +8,10 @@
     <color name="iconFillColor">#3DDC84</color>
 
     <color name="iconBackgroundColor">#2e2f43</color>
+
+    <color name="statusColor">#1a3747</color>
+    <color name="navigationColor">@color/statusColor</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
 </resources>

@@ -13,12 +13,12 @@ import kotlinx.coroutines.launch
  * @Version 1.0
  */
 class SplashViewModel : BaseViewModel() {
-    var _somethingDelay: Boolean = false
+    var _somethingDelay: Boolean = true
 
     fun somethingDelay(): Boolean {
         viewModelScope.launch {
             delay(2500)
-            _somethingDelay = true
+            _somethingDelay = false
         }
         return _somethingDelay
     }
