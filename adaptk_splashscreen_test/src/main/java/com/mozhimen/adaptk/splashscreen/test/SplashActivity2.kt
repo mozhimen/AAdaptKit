@@ -50,15 +50,15 @@ class SplashActivity2 : BaseActivityVBVM<ActivitySplashBinding, SplashViewModel>
             return@keepSplashScreenLonger vm.somethingDelay()
         }
         customizeSplashScreenExit(splashScreen) { view, iconView ->
-            revealActivity(iconView) {
+//            revealActivity(iconView) {
                 startActivityAndFinish<MainActivity>(
                     UtilKActivityOptionsCompat.makeCustomAnimation(
                         this,
-                        com.mozhimen.animk.R.anim.animk_alpha_show,
-                        com.mozhimen.animk.R.anim.animk_alpha_hide
+                        com.mozhimen.animk.R.anim.animk_trans_bottom_show,
+                        com.mozhimen.animk.R.anim.animk_set_alpha_no
                     ).toBundle()
                 )
-            }
+//            }
         }
         ViewCompat.setOnApplyWindowInsetsListener(getContentView()) { _, insets ->
             val displayMetrics = resources.displayMetrics
