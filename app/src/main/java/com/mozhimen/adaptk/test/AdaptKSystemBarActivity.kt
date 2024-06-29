@@ -1,5 +1,8 @@
 package com.mozhimen.adaptk.test
 
+import android.app.AlertDialog
+import android.app.Dialog
+import android.os.Bundle
 import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarProperty
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarPropertyOr
@@ -16,5 +19,11 @@ import com.mozhimen.adaptk.test.databinding.ActivityAdaptkSystembarBinding
 class AdaptKSystemBarActivity : BaseActivityVDB<ActivityAdaptkSystembarBinding>() {
     override fun initFlag() {
         initAdaptKSystemBar()
+    }
+
+    override fun initView(savedInstanceState: Bundle?) {
+        vdb.adaptkTxt.setOnClickListener {
+            AlertDialog.Builder(this).show()
+        }
     }
 }
