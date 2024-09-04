@@ -1,7 +1,7 @@
 package com.mozhimen.adaptk.splashscreen.test
 
 import androidx.lifecycle.viewModelScope
-import com.mozhimen.basick.elemk.androidx.lifecycle.bases.BaseViewModel
+import com.mozhimen.kotlin.elemk.androidx.lifecycle.bases.BaseViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

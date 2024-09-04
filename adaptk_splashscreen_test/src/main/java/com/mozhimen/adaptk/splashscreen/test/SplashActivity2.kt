@@ -17,16 +17,16 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import com.mozhimen.adaptk.splashscreen.test.databinding.ActivitySplashBinding
 import com.mozhimen.adaptk.splashscreen.utils.AdaptKSplashscreenUtil
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.viewbinding.BaseActivityVBVM
-import com.mozhimen.basick.elemk.commons.IAB_Listener
-import com.mozhimen.basick.elemk.commons.I_Listener
-import com.mozhimen.basick.utilk.android.app.getContentView
-import com.mozhimen.basick.utilk.android.content.startActivityAndFinish
-import com.mozhimen.basick.utilk.android.transition.UtilKSlide
-import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
-import com.mozhimen.basick.utilk.androidx.core.UtilKActivityOptionsCompat
-import com.mozhimen.basick.utilk.commons.IUtilK
-import com.mozhimen.basick.utilk.wrapper.UtilKAnim
+import com.mozhimen.mvvmk.bases.activity.viewbinding.BaseActivityVBVM
+import com.mozhimen.kotlin.elemk.commons.IAB_Listener
+import com.mozhimen.kotlin.elemk.commons.I_Listener
+import com.mozhimen.kotlin.utilk.android.app.getContentView
+import com.mozhimen.kotlin.utilk.android.content.startActivityAndFinish
+import com.mozhimen.kotlin.utilk.android.transition.UtilKSlide
+import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
+import com.mozhimen.kotlin.utilk.androidx.core.UtilKActivityOptionsCompat
+import com.mozhimen.kotlin.utilk.commons.IUtilK
+import com.mozhimen.kotlin.utilk.wrapper.UtilKAnim
 import kotlin.math.hypot
 
 /**

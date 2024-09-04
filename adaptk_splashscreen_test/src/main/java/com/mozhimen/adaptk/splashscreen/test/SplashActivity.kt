@@ -14,9 +14,9 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.splashscreen.SplashScreenViewProvider
 import androidx.core.view.postDelayed
 import com.mozhimen.adaptk.splashscreen.test.databinding.ActivitySplashBinding
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.viewbinding.BaseActivityVBVM
-import com.mozhimen.basick.utilk.android.os.UtilKBuildVersion
-import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
+import com.mozhimen.mvvmk.bases.activity.viewbinding.BaseActivityVBVM
+import com.mozhimen.kotlin.utilk.android.os.UtilKBuildVersion
+import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
 
 /**
  * @ClassName SplashActivity

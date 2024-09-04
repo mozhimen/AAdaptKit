@@ -7,7 +7,7 @@ import android.util.Log
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet.Constraint
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
+import com.mozhimen.basick.bases.databinding.BaseActivityVDB
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarProperty
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarPropertyAnd
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarPropertyOr
@@ -16,8 +16,8 @@ import com.mozhimen.adaptk.systembar.cons.CPropertyAnd
 import com.mozhimen.adaptk.systembar.cons.CPropertyOr
 import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
 import com.mozhimen.adaptk.test.databinding.ActivityAdaptkSystembarBinding
-import com.mozhimen.basick.utilk.android.app.getContentView
-import com.mozhimen.basick.utilk.android.app.getDecorView
+import com.mozhimen.kotlin.utilk.android.app.getContentView
+import com.mozhimen.kotlin.utilk.android.app.getDecorView
 
 //简单用法, 直接使用预制的属性
 //@AAdaptKSystemBarProperty(CProperty.IMMERSED_HARD_STICKY)

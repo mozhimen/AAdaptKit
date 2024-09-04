@@ -8,10 +8,10 @@ import androidx.core.splashscreen.SplashScreen
 import androidx.core.splashscreen.SplashScreen.KeepOnScreenCondition
 import androidx.core.splashscreen.SplashScreenViewProvider
 import androidx.core.view.postDelayed
-import com.mozhimen.basick.elemk.commons.I_AListener
-import com.mozhimen.basick.utilk.android.os.UtilKBuildVersion
-import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
-import com.mozhimen.basick.utilk.commons.IUtilK
+import com.mozhimen.kotlin.elemk.commons.I_AListener
+import com.mozhimen.kotlin.utilk.android.os.UtilKBuildVersion
+import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
+import com.mozhimen.kotlin.utilk.commons.IUtilK
 
 /**
  * @ClassName AdaptKSplashscreenUtil

@@ -2,12 +2,12 @@
 //
 //import android.app.Activity
 //import android.util.Log
-import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
-//import com.mozhimen.basick.lintk.optin.ALintKO_ApiDeclare_InManifest
-//import com.mozhimen.basick.lintk.optin.ALintKO_ApiInit_InApplication
-//import com.mozhimen.basick.manifestk.cons.CMetaData
-//import com.mozhimen.basick.utilk.android.view.UtilKScreen
-//import com.mozhimen.basick.utilk.commons.IUtilK
+import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
+//import com.mozhimen.kotlin.lintk.optin.ALintKO_ApiDeclare_InManifest
+//import com.mozhimen.kotlin.lintk.optin.ALintKO_ApiInit_InApplication
+//import com.mozhimen.manifestk.cons.CMetaData
+//import com.mozhimen.kotlin.utilk.android.view.UtilKScreen
+//import com.mozhimen.kotlin.utilk.commons.IUtilK
 //import me.jessyan.autosize.AutoSizeConfig
 //import me.jessyan.autosize.onAdaptListener
 //import java.lang.Integer.max

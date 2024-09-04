@@ -1,9 +1,9 @@
 package com.mozhimen.adaptk.systembar.helpers
 
 import android.app.Activity
-import com.mozhimen.basick.utilk.android.content.UtilKConfiguration
-import com.mozhimen.basick.utilk.android.view.UtilKStatusBarIcon
-import com.mozhimen.basick.utilk.android.view.UtilKSystemBar
+import com.mozhimen.kotlin.utilk.android.content.UtilKConfiguration
+import com.mozhimen.kotlin.utilk.android.view.UtilKStatusBarIcon
+import com.mozhimen.kotlin.utilk.android.view.UtilKSystemBar
 
 /**
  * @ClassName SenseKSystemBarHelper

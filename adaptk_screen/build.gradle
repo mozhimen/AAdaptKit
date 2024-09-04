@@ -32,6 +32,7 @@ android {
 
 dependencies {
     implementation project(':SwiftKit:basick')
+    implementation project(':AStackKit:stackk_callback')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

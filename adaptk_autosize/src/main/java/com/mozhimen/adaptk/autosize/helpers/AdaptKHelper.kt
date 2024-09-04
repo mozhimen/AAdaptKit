@@ -3,9 +3,9 @@ package com.mozhimen.adaptk.autosize.helpers//package com.mozhimen.xmlk.adaptk.a
 //import android.content.Context
 //import android.content.ContextWrapper
 //import android.content.res.Resources
-//import com.mozhimen.basick.lintk.optin.ALintKOptIn_ApiDeclare_InManifest
-//import com.mozhimen.basick.lintk.optin.ALintKOptIn_ApiInit_InApplication
-//import com.mozhimen.basick.utilk.android.content.UtilKConfiguration
+//import com.mozhimen.kotlin.lintk.optin.ALintKOptIn_ApiDeclare_InManifest
+//import com.mozhimen.kotlin.lintk.optin.ALintKOptIn_ApiInit_InApplication
+//import com.mozhimen.kotlin.utilk.android.content.UtilKConfiguration
 //import com.mozhimen.xmlk.adaptk.autosize.AdaptKAutoSize
 //import me.jessyan.autosize.AutoSizeCompat
 //

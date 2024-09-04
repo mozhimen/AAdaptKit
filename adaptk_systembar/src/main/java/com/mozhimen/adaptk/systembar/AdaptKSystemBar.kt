@@ -7,11 +7,11 @@ import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarPropertyOr
 import com.mozhimen.adaptk.systembar.cons.CProperty
 import com.mozhimen.adaptk.systembar.helpers.AdaptKSystemBarHelper
 import com.mozhimen.adaptk.systembar.mos.MPropertyConfig
-import com.mozhimen.basick.utilk.android.app.getAnnotation
-import com.mozhimen.basick.utilk.android.util.d
-import com.mozhimen.basick.utilk.bases.BaseUtilK
-import com.mozhimen.basick.utilk.kotlin.getStrByte
-import com.mozhimen.basick.utilk.kotlin.int2boolean
+import com.mozhimen.kotlin.utilk.android.app.getAnnotation
+import com.mozhimen.kotlin.utilk.android.util.d
+import com.mozhimen.kotlin.utilk.bases.BaseUtilK
+import com.mozhimen.kotlin.utilk.kotlin.getStrByte
+import com.mozhimen.kotlin.utilk.kotlin.int2boolean
 
 /**
  * @ClassName StatusBarK
