@@ -24,7 +24,8 @@ object AdaptKSplashscreenUtil : IUtilK {
     // Keep splash screen showing till data initialized.
     fun keepSplashScreenLonger(splashScreen: SplashScreen, condition: KeepOnScreenCondition) {
         UtilKLogWrapper.d(TAG, "SplashActivity#keepSplashScreenLonger()")
-        splashScreen.setKeepVisibleCondition(condition)
+//        splashScreen.setKeepVisibleCondition(condition)
+        splashScreen.setKeepOnScreenCondition(condition)
     }
 
     fun keepSplashScreenLonger(contentView: View, onLoadFinish: I_AListener<Boolean>) {
