@@ -11,7 +11,7 @@ import com.mozhimen.kotlin.utilk.android.view.UtilKSystemBar
  * @Author Mozhimen & Kolin Zhao
  * @Version 1.0
  */
-internal object AdaptKSystemBarHelper {
+object AdaptKSystemBarHelper {
     @JvmStatic
     fun setSystemBarProperty(
         activity: Activity,
@@ -26,7 +26,7 @@ internal object AdaptKSystemBarHelper {
     fun setSystemBarTheme(
         activity: Activity,
         isThemeCustom: Boolean,
-        isThemeDark: Boolean
+        isThemeDark: Boolean,
     ) {
         if (isThemeCustom) UtilKStatusBarIcon.applyIcon(activity, isThemeDark)
         else UtilKStatusBarIcon.applyIcon(activity, UtilKConfiguration.isUiModeDark_ofSys())
@@ -38,7 +38,7 @@ internal object AdaptKSystemBarHelper {
         isStatusBarHide: Boolean,
         isNavigationBarHide: Boolean,
         isTitleBarHide: Boolean,
-        isActionBarHide: Boolean
+        isActionBarHide: Boolean,
     ) {
         if (isTitleBarHide) UtilKSystemBar.hideTitleBar(activity)
         if (isStatusBarHide) UtilKSystemBar.hideStatusBar(activity)
@@ -50,7 +50,7 @@ internal object AdaptKSystemBarHelper {
     fun overlaySystemBar(
         activity: Activity,
         isStatusBarOverlay: Boolean,
-        isNavigationBarOverlay: Boolean
+        isNavigationBarOverlay: Boolean,
     ) {
         if (isStatusBarOverlay) UtilKSystemBar.overlayStatusBar(activity)
         if (isNavigationBarOverlay) UtilKSystemBar.overlayNavigationBar(activity)
@@ -60,7 +60,7 @@ internal object AdaptKSystemBarHelper {
     fun setLayoutProperty(
         activity: Activity,
         isLayoutStable: Boolean,
-        isFitsSystemWindows: Boolean
+        isFitsSystemWindows: Boolean,
     ) {
         if (isLayoutStable) UtilKSystemBar.applyLayoutStable(activity)
         if (isFitsSystemWindows) UtilKSystemBar.applyFitsSystemWindows(activity)

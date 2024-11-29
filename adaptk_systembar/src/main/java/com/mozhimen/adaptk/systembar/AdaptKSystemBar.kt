@@ -10,8 +10,7 @@ import com.mozhimen.adaptk.systembar.mos.MPropertyConfig
 import com.mozhimen.kotlin.utilk.android.app.getAnnotation
 import com.mozhimen.kotlin.utilk.android.util.d
 import com.mozhimen.kotlin.utilk.bases.BaseUtilK
-import com.mozhimen.kotlin.utilk.kotlin.getStrByte
-import com.mozhimen.kotlin.utilk.kotlin.int2boolean
+import com.mozhimen.kotlin.utilk.kotlin.intBinary2booleans
 
 /**
  * @ClassName StatusBarK
@@ -37,8 +36,8 @@ fun Activity.initAdaptKSystemBar() {
     AdaptKSystemBar.initAnnor(this)
 }
 
-fun Activity.initAdaptKSystemBar(byteInt: Int) {
-    AdaptKSystemBar.init(this, byteInt)
+fun Activity.initAdaptKSystemBar(intBinary: Int) {
+    AdaptKSystemBar.init(this, intBinary)
 }
 
 object AdaptKSystemBar : BaseUtilK() {
@@ -58,8 +57,8 @@ object AdaptKSystemBar : BaseUtilK() {
     }
 
     @JvmStatic
-    fun init(activity: Activity, byteInt: Int) {
-        init(activity, getConfigForByteInt(byteInt))
+    fun init(activity: Activity, intBinary: Int) {
+        init(activity, getConfigForIntBinary(intBinary))
     }
 
     @JvmStatic
@@ -104,7 +103,7 @@ object AdaptKSystemBar : BaseUtilK() {
         isStatusBarBgTranslucent: Boolean = false,
         isStatusBarIconLowProfile: Boolean = false,
         isThemeCustom: Boolean = false,
-        isThemeDark: Boolean = false
+        isThemeDark: Boolean = false,
     ) {
         AdaptKSystemBarHelper.setSystemBarProperty(activity, isStatusBarBgTranslucent, isStatusBarIconLowProfile)
         AdaptKSystemBarHelper.setSystemBarTheme(activity, isThemeCustom, isThemeDark)
@@ -114,35 +113,45 @@ object AdaptKSystemBar : BaseUtilK() {
         AdaptKSystemBarHelper.setLayoutProperty(activity, isLayoutStable, isFitsSystemWindows)
     }
 
-    private fun getConfigForByteInt(byteInt: Int): MPropertyConfig {
-        val mPropertyConfig = MPropertyConfig()
-        val byteStr = byteInt.getStrByte(16)
-        var byteBoolean: Boolean
-        byteStr.forEachIndexed { position, c ->
-            byteBoolean = c.digitToInt().int2boolean()
-            when (position) {
-                1 -> mPropertyConfig.isImmersed = byteBoolean
-                2 -> mPropertyConfig.isImmersedHard = byteBoolean
-                3 -> mPropertyConfig.isImmersedSticky = byteBoolean
-                ////////////////////////////////////////////
-                4 -> mPropertyConfig.isHideStatusBar = byteBoolean
-                5 -> mPropertyConfig.isHideNavigationBar = byteBoolean
-                6 -> mPropertyConfig.isHideTitleBar = byteBoolean
-                7 -> mPropertyConfig.isHideActionBar = byteBoolean
-                ////////////////////////////////////////////
-                8 -> mPropertyConfig.isOverlayStatusBar = byteBoolean
-                9 -> mPropertyConfig.isOverlayNavigationBar = byteBoolean
-                10 -> mPropertyConfig.isLayoutStable = byteBoolean
-                11 -> mPropertyConfig.isFitsSystemWindows = byteBoolean
-                ////////////////////////////////////////////
-                12 -> mPropertyConfig.isStatusBarBgTranslucent = byteBoolean
-                13 -> mPropertyConfig.isStatusBarIconLowProfile = byteBoolean
-                14 -> mPropertyConfig.isThemeCustom = byteBoolean
-                15 -> mPropertyConfig.isThemeDark = byteBoolean
-            }
-        }
-        return mPropertyConfig.also { "getConfigForByteInt: mPropertyConfig $it".d(TAG) }
+    private fun getConfigForIntBinary(intBinary: Int): MPropertyConfig {
+        val booleans = intBinary.intBinary2booleans(16)
+        return MPropertyConfig(
+            booleans[1], booleans[2], booleans[3],
+            booleans[4], booleans[5], booleans[6], booleans[7],
+            booleans[8], booleans[9], booleans[10], booleans[11],
+            booleans[12], booleans[13], booleans[14], booleans[15],
+        ).also { "getConfigForIntBinary: mPropertyConfig $it".d(TAG) }
     }
+
+//    private fun getConfigForIntBinary(intBinary: Int): MPropertyConfig {
+//        val mPropertyConfig = MPropertyConfig()
+//        val byteStr = intBinary.getStrByte(16)
+//        var byteBoolean: Boolean
+//        byteStr.forEachIndexed { position, c ->
+//            byteBoolean = c.digitToInt().int2boolean()
+//            when (position) {
+//                1 -> mPropertyConfig.isImmersed = byteBoolean
+//                2 -> mPropertyConfig.isImmersedHard = byteBoolean
+//                3 -> mPropertyConfig.isImmersedSticky = byteBoolean
+//                ////////////////////////////////////////////
+//                4 -> mPropertyConfig.isHideStatusBar = byteBoolean
+//                5 -> mPropertyConfig.isHideNavigationBar = byteBoolean
+//                6 -> mPropertyConfig.isHideTitleBar = byteBoolean
+//                7 -> mPropertyConfig.isHideActionBar = byteBoolean
+//                ////////////////////////////////////////////
+//                8 -> mPropertyConfig.isOverlayStatusBar = byteBoolean
+//                9 -> mPropertyConfig.isOverlayNavigationBar = byteBoolean
+//                10 -> mPropertyConfig.isLayoutStable = byteBoolean
+//                11 -> mPropertyConfig.isFitsSystemWindows = byteBoolean
+//                ////////////////////////////////////////////
+//                12 -> mPropertyConfig.isStatusBarBgTranslucent = byteBoolean
+//                13 -> mPropertyConfig.isStatusBarIconLowProfile = byteBoolean
+//                14 -> mPropertyConfig.isThemeCustom = byteBoolean
+//                15 -> mPropertyConfig.isThemeDark = byteBoolean
+//            }
+//        }
+//        return mPropertyConfig.also { "getConfigForIntBinary: mPropertyConfig $it".d(TAG) }
+//    }
 
 
 //    @JvmStatic
