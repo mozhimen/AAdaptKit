@@ -1,21 +1,15 @@
 package com.mozhimen.adaptk.splashscreen.test
 
-import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.graphics.Path
-import android.os.SystemClock
 import android.view.View
 import android.view.animation.AccelerateInterpolator
-import android.view.animation.AnticipateInterpolator
 import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.core.splashscreen.SplashScreenViewProvider
-import androidx.core.view.postDelayed
 import com.mozhimen.adaptk.splashscreen.test.databinding.ActivitySplashBinding
-import com.mozhimen.bindk.bases.activity.viewbinding.BaseActivityVBVM
-import com.mozhimen.kotlin.utilk.android.os.UtilKBuildVersion
+import com.mozhimen.bindk.bases.viewbinding.activity.BaseActivityVBVM
 import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
 
 /**

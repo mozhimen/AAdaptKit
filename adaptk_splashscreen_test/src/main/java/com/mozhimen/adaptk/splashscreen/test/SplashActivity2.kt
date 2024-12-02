@@ -5,28 +5,21 @@ import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.os.Build
 import android.os.Bundle
-import android.view.Gravity
 import android.view.View
-import android.view.animation.AccelerateInterpolator
 import android.view.animation.AnticipateInterpolator
-import android.view.animation.DecelerateInterpolator
-import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import com.mozhimen.adaptk.splashscreen.test.databinding.ActivitySplashBinding
 import com.mozhimen.adaptk.splashscreen.utils.AdaptKSplashscreenUtil
-import com.mozhimen.bindk.bases.activity.viewbinding.BaseActivityVBVM
+import com.mozhimen.bindk.bases.viewbinding.activity.BaseActivityVBVM
 import com.mozhimen.kotlin.elemk.commons.IAB_Listener
 import com.mozhimen.kotlin.elemk.commons.I_Listener
 import com.mozhimen.kotlin.utilk.android.app.getContentView
 import com.mozhimen.kotlin.utilk.android.content.startActivityAndFinish
-import com.mozhimen.kotlin.utilk.android.transition.UtilKSlide
 import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
 import com.mozhimen.kotlin.utilk.androidx.core.UtilKActivityOptionsCompat
 import com.mozhimen.kotlin.utilk.commons.IUtilK
-import com.mozhimen.kotlin.utilk.wrapper.UtilKAnim
 import kotlin.math.hypot
 
 /**

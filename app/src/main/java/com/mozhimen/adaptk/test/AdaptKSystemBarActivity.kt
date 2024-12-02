@@ -1,21 +1,17 @@
 package com.mozhimen.adaptk.test
 
 import android.app.AlertDialog
-import android.app.Dialog
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet.Constraint
-import com.mozhimen.basick.bases.databinding.BaseActivityVDB
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarProperty
 import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarPropertyAnd
-import com.mozhimen.adaptk.systembar.annors.AAdaptKSystemBarPropertyOr
 import com.mozhimen.adaptk.systembar.cons.CProperty
 import com.mozhimen.adaptk.systembar.cons.CPropertyAnd
-import com.mozhimen.adaptk.systembar.cons.CPropertyOr
 import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
 import com.mozhimen.adaptk.test.databinding.ActivityAdaptkSystembarBinding
+import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
 import com.mozhimen.kotlin.utilk.android.app.getContentView
 import com.mozhimen.kotlin.utilk.android.app.getDecorView
 
