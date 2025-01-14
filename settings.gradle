@@ -28,12 +28,16 @@ include ':adaptk_dynamic_colors'
 include ':adaptk_preference'
 include ':adaptk_screen'
 include ':adaptk_splashscreen_test'
-//SwiftKit
-include ':SwiftKit'
-project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
-include ':SwiftKit:basick'
-include ':SwiftKit:xmlk'
-include ':SwiftKit:bindk'
+//ALibKit_Jetbrains
+include ':ALibKit_Jetbrains'
+project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
+include ':ALibKit_Jetbrains:kotlin_stdlib'
+//ASwiftKit
+include ':ASwiftKit'
+project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
+include ':ASwiftKit:basick'
+include ':ASwiftKit:xmlk'
+include ':ASwiftKit:bindk'
 //ALibKit_Jetpack
 include ':ALibKit_Jetpack'
 project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")

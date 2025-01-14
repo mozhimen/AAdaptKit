@@ -38,8 +38,8 @@ android {
 
 dependencies {
 
-    implementation project(':SwiftKit:bindk')
-    implementation project(':SwiftKit:xmlk')
+    implementation project(':ASwiftKit:bindk')
+    implementation project(':ASwiftKit:xmlk')
     implementation project(':adaptk_systembar')
 
     testImplementation 'junit:junit:4.13.2'
