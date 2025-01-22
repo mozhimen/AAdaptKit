@@ -38,7 +38,7 @@ android {
 dependencies {
     implementation project(':ASwiftKit:bindk')
     implementation project(':ASwiftKit:xmlk')
-    implementation project(':adaptk_splashscreen')
+    implementation project(':splashscreen')
     implementation project(':AAnimKit:animk')
 
     testImplementation 'junit:junit:4.13.2'

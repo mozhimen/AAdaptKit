@@ -1,5 +1,7 @@
 package com.mozhimen.adaptk.systembar.annors
 
+import androidx.annotation.Keep
+
 /**
  * @ClassName ASenseKSystemBarColor
  * @Description TODO

@@ -1,6 +1,7 @@
 package com.mozhimen.adaptk.systembar.annors
 
 import androidx.annotation.IntDef
+import androidx.annotation.Keep
 import com.mozhimen.adaptk.systembar.cons.CProperty
 
 /**

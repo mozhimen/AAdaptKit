@@ -21,28 +21,41 @@ dependencyResolutionManagement {
 
 rootProject.name = "AAdaptKit"
 include ':app'
-include ':adaptk_autosize'
-include ':adaptk_systembar'
-include ':adaptk_splashscreen'
-include ':adaptk_dynamic_colors'
-include ':adaptk_preference'
-include ':adaptk_screen'
-include ':adaptk_splashscreen_test'
+include ':autosize'
+include ':systembar'
+include ':splashscreen'
+include ':dynamic_colors'
+include ':preference'
+include ':screen'
+include ':splashscreen_test'
+//ALibKit_Google
+include ':ALibKit_Google'
+project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
+include ':ALibKit_Google:material'
+//ALibKit_Jetpack
+include ':ALibKit_Jetpack'
+project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
+include ':ALibKit_Jetpack:preference'
+include ':ALibKit_Jetpack:core_splashscreen'
+include ':ALibKit_Jetpack:databinding'
+include ':ALibKit_Jetpack:core'
+include ':ALibKit_Jetpack:annotation'
 //ALibKit_Jetbrains
 include ':ALibKit_Jetbrains'
 project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
 include ':ALibKit_Jetbrains:kotlin_stdlib'
+include ':ALibKit_Jetbrains:kotlinx_coroutines'
+//KUtilKit
+include ':KUtilKit'
+project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
+include ':KUtilKit:android'
+include ':KUtilKit:kotlin'
 //ASwiftKit
 include ':ASwiftKit'
 project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
 include ':ASwiftKit:basick'
 include ':ASwiftKit:xmlk'
 include ':ASwiftKit:bindk'
-//ALibKit_Jetpack
-include ':ALibKit_Jetpack'
-project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
-include ':ALibKit_Jetpack:preference'
-include ':ALibKit_Jetpack:core_splashscreen'
 //AAnimKit
 include ':AAnimKit'
 project(':AAnimKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AAnimKit")
@@ -50,10 +63,6 @@ include ':AAnimKit:animk'
 //AStackKit
 include ':AStackKit'
 project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
-include ':AStackKit:stackk_callback'
-include ':AStackKit:stackk_basic'
-//KUtilKit
-include ':KUtilKit'
-project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
-include ':KUtilKit:utilk_android'
-include ':KUtilKit:utilk_kotlin'
+include ':AStackKit:callback'
+include ':AStackKit:basic'
+

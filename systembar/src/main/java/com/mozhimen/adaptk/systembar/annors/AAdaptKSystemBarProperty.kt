@@ -1,5 +1,6 @@
 package com.mozhimen.adaptk.systembar.annors
 
+import androidx.annotation.Keep
 import com.mozhimen.adaptk.systembar.cons.CProperty
 
 /**
@@ -21,6 +22,7 @@ import com.mozhimen.adaptk.systembar.cons.CProperty
  *     val bgColorDark: Int = android.R.color.black //状态栏背景色(深色主题)
  * )
  */
+@Keep
 @Target(AnnotationTarget.CLASS)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class AAdaptKSystemBarProperty(

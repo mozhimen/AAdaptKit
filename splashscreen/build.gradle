@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.mozhimen.adaptk.systembar'
+    namespace 'com.mozhimen.adaptk.splashscreen'
     compileSdk 34
 
     defaultConfig {
@@ -31,7 +31,8 @@ android {
 }
 
 dependencies {
-    implementation project(':KUtilKit:utilk_android')
+    implementation project(':KUtilKit:android')
+    api project(':ALibKit_Jetpack:core_splashscreen')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
