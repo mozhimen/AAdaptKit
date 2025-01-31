@@ -23,11 +23,12 @@ rootProject.name = "AAdaptKit"
 include ':app'
 include ':autosize'
 include ':systembar'
+include ':systembar:exam'
 include ':splashscreen'
+include ':splashscreen:test'
 include ':dynamic_colors'
 include ':preference'
 include ':screen'
-include ':splashscreen_test'
 //ALibKit_Google
 include ':ALibKit_Google'
 project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")

@@ -111,6 +111,7 @@ object CProperty {
      * 状态栏深色图标
      */
     const val TRANSLUCENT_DARK = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+    const val DARK = PreProperty.NORMAL or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
 
     object PreProperty {
         const val NORMAL = CPropertyOr.NORMAL//0b0000_0000_0000_0000
