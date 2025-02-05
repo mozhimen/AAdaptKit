@@ -9,7 +9,7 @@ import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.mozhimen.adaptk.splashscreen.test.databinding.ActivitySplashBinding
-import com.mozhimen.bindk.bases.viewbinding.activity.BaseActivityVBVM
+import com.mozhimen.uik.databinding.bases.viewbinding.activity.BaseActivityVBVM
 import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
 
 /**

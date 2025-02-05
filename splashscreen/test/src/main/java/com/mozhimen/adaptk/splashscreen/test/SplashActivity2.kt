@@ -12,7 +12,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import com.mozhimen.adaptk.splashscreen.test.databinding.ActivitySplashBinding
 import com.mozhimen.adaptk.splashscreen.utils.AdaptKSplashscreenUtil
-import com.mozhimen.bindk.bases.viewbinding.activity.BaseActivityVBVM
+import com.mozhimen.uik.databinding.bases.viewbinding.activity.BaseActivityVBVM
 import com.mozhimen.kotlin.elemk.commons.IAB_Listener
 import com.mozhimen.kotlin.elemk.commons.I_Listener
 import com.mozhimen.kotlin.utilk.android.app.getContentView

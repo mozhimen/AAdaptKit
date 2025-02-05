@@ -11,7 +11,7 @@ import com.mozhimen.adaptk.systembar.cons.CProperty
 import com.mozhimen.adaptk.systembar.cons.CPropertyAnd
 import com.mozhimen.adaptk.systembar.initAdaptKSystemBar
 import com.mozhimen.adaptk.test.databinding.ActivityAdaptkSystembarBinding
-import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
+import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseActivityVDB
 import com.mozhimen.kotlin.utilk.android.app.getContentView
 import com.mozhimen.kotlin.utilk.android.app.getDecorView
 
