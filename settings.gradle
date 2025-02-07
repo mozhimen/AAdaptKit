@@ -29,6 +29,10 @@ include ':splashscreen:test'
 include ':dynamic_colors'
 include ':preference'
 include ':screen'
+include ':window'
+include ':window:java'
+include ':window:rxjava2'
+include ':window:rxjava3'
 //ALibKit_Google
 include ':ALibKit_Google'
 project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
@@ -41,6 +45,10 @@ include ':ALibKit_Jetpack:core_splashscreen'
 include ':ALibKit_Jetpack:databinding'
 include ':ALibKit_Jetpack:core'
 include ':ALibKit_Jetpack:annotation'
+include ':ALibKit_Jetpack:window'
+include ':ALibKit_Jetpack:window_java'
+include ':ALibKit_Jetpack:window_rxjava2'
+include ':ALibKit_Jetpack:window_rxjava3'
 //ALibKit_Jetbrains
 include ':ALibKit_Jetbrains'
 project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
@@ -51,6 +59,11 @@ include ':KUtilKit'
 project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
 include ':KUtilKit:android'
 include ':KUtilKit:kotlin'
+//JUtilKit
+include ':JUtilKit'
+project(':JUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\JUtilKit")
+include ':JUtilKit:android'
+include ':JUtilKit:java'
 //ASwiftKit
 include ':ASwiftKit'
 project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
@@ -66,4 +79,13 @@ include ':AStackKit'
 project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
 include ':AStackKit:callback'
 include ':AStackKit:basic'
+//AStackKit
+include ':AStackKit'
+project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
+include ':AStackKit:callback'
+//ARxKit
+include ':ARxKit'
+project(':ARxKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ARxKit")
+include ':ARxKit:rxjava2'
+include ':ARxKit:rxjava3'
 
