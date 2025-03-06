@@ -2,8 +2,8 @@ package com.mozhimen.adaptk.systembar.helpers
 
 import android.app.Activity
 import com.mozhimen.kotlin.utilk.android.content.UtilKConfiguration
-import com.mozhimen.kotlin.utilk.android.view.UtilKStatusBarIcon
-import com.mozhimen.kotlin.utilk.android.view.UtilKSystemBar
+import com.mozhimen.kotlin.utilk.wrapper.UtilKStatusBar
+import com.mozhimen.kotlin.utilk.wrapper.UtilKSystemBar
 
 /**
  * @ClassName SenseKSystemBarHelper
@@ -28,8 +28,8 @@ object AdaptKSystemBarHelper {
         isThemeCustom: Boolean,
         isThemeDark: Boolean,
     ) {
-        if (isThemeCustom) UtilKStatusBarIcon.applyIcon(activity, isThemeDark)
-        else UtilKStatusBarIcon.applyIcon(activity, UtilKConfiguration.isUiModeDark_ofSys())
+        if (isThemeCustom) UtilKStatusBar.applyIcon(activity, isThemeDark)
+        else UtilKStatusBar.applyIcon(activity, UtilKConfiguration.isUiModeDark_ofSys())
     }
 
     @JvmStatic
