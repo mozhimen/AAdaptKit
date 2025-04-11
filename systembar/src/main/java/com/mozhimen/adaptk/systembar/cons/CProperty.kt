@@ -105,12 +105,19 @@ object CProperty {
     const val IMMERSED_SOFT = PreProperty.IMMERSED_SOFT or PreProperty.HIDE_ALL
     const val IMMERSED_HARD = PreProperty.IMMERSED_HARD or PreProperty.HIDE_ALL or PreProperty.OVERLAY_ALL or PreProperty.LAYOUT_DEFAULT
     const val IMMERSED_HARD_STICKY = PreProperty.IMMERSED_HARD_STICKY or PreProperty.HIDE_ALL or PreProperty.OVERLAY_ALL or PreProperty.LAYOUT_DEFAULT
-    const val TRANSLUCENT = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT
-    const val TRANSLUCENT_LIGHT = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
+    const val TRANSLUCENT_ALL = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT
+    const val TRANSLUCENT_ALL_LIGHT = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
     /*
      * 状态栏深色图标
      */
-    const val TRANSLUCENT_DARK = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+    const val TRANSLUCENT_ALL_DARK = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+    const val TRANSLUCENT_STATUS_BAR = PreProperty.NORMAL or CPropertyOr.OVERLAY_STATUS_BAR  or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT
+    const val TRANSLUCENT_STATUS_BAR_LIGHT = PreProperty.NORMAL or CPropertyOr.OVERLAY_STATUS_BAR  or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
+    /*
+     * 状态栏深色图标
+     */
+    const val TRANSLUCENT_STATUS_BAR_DARK = PreProperty.NORMAL or CPropertyOr.OVERLAY_STATUS_BAR  or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+
     const val DARK = PreProperty.NORMAL or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
 
     object PreProperty {
