@@ -119,6 +119,7 @@ object CProperty {
     const val TRANSLUCENT_STATUS_BAR_DARK = PreProperty.NORMAL or CPropertyOr.OVERLAY_STATUS_BAR  or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
 
     const val DARK = PreProperty.NORMAL or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+    const val LIGHT = PreProperty.NORMAL or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
 
     object PreProperty {
         const val NORMAL = CPropertyOr.NORMAL//0b0000_0000_0000_0000
