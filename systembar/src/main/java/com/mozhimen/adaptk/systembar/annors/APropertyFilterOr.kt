@@ -1,7 +1,6 @@
 package com.mozhimen.adaptk.systembar.annors
 
 import androidx.annotation.IntDef
-import androidx.annotation.Keep
 import com.mozhimen.adaptk.systembar.cons.CPropertyOr
 
 /**
@@ -24,7 +23,7 @@ import com.mozhimen.adaptk.systembar.cons.CPropertyOr
         CPropertyOr.OVERLAY_NAVIGATION_BAR,
         CPropertyOr.LAYOUT_STABLE,
         CPropertyOr.FITS_SYSTEM_WINDOWS,
-        CPropertyOr.STATUS_BAR_BG_TRANSLUCENT,
+        CPropertyOr.SYSTEM_BAR_BG_TRANSLUCENT,
         CPropertyOr.STATUS_BAR_ICON_LOW_PROFILE,
         CPropertyOr.THEME_CUSTOM,
         CPropertyOr.THEME_DARK

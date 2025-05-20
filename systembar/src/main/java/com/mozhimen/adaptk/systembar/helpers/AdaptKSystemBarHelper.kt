@@ -15,10 +15,10 @@ object AdaptKSystemBarHelper {
     @JvmStatic
     fun setSystemBarProperty(
         activity: Activity,
-        isStatusBarBgTranslucent: Boolean,
+        isSystemBarBgTranslucent: Boolean,
         isStatusBarIconLowProfile: Boolean,
     ) {
-        if (isStatusBarBgTranslucent) UtilKSystemBar.applyTranslucent(activity)
+        if (isSystemBarBgTranslucent) UtilKSystemBar.applyTranslucent(activity)
         if (isStatusBarIconLowProfile) UtilKSystemBar.applyStatusBarLowProfile(activity)
     }
 

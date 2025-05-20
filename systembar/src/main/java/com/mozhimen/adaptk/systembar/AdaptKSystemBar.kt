@@ -76,7 +76,7 @@ object AdaptKSystemBar : BaseUtilK() {
             mPropertyConfig.isOverlayNavigationBar,
             mPropertyConfig.isLayoutStable,
             mPropertyConfig.isFitsSystemWindows,
-            mPropertyConfig.isStatusBarBgTranslucent,
+            mPropertyConfig.isSystemBarBgTranslucent,
             mPropertyConfig.isStatusBarIconLowProfile,
             mPropertyConfig.isThemeCustom,
             mPropertyConfig.isThemeDark
@@ -100,12 +100,12 @@ object AdaptKSystemBar : BaseUtilK() {
         isLayoutStable: Boolean = false,//设置布局不受系统栏出现隐藏的而改变位置
         isFitsSystemWindows: Boolean = false,//设置系统栏在控件上方的时候,不遮挡控件
         //////////////////////////////////////
-        isStatusBarBgTranslucent: Boolean = false,
+        isSystemBarBgTranslucent: Boolean = false,
         isStatusBarIconLowProfile: Boolean = false,
         isThemeCustom: Boolean = false,
         isThemeDark: Boolean = false,
     ) {
-        AdaptKSystemBarHelper.setSystemBarProperty(activity, isStatusBarBgTranslucent, isStatusBarIconLowProfile)
+        AdaptKSystemBarHelper.setSystemBarProperty(activity, isSystemBarBgTranslucent, isStatusBarIconLowProfile)
         AdaptKSystemBarHelper.setSystemBarTheme(activity, isThemeCustom, isThemeDark)
         AdaptKSystemBarHelper.hideSystemBar(activity, isHideStatusBar, isHideNavigationBar, isHideTitleBar, isHideActionBar)
         AdaptKSystemBarHelper.overlaySystemBar(activity, isOverlayStatusBar, isOverlayNavigationBar)

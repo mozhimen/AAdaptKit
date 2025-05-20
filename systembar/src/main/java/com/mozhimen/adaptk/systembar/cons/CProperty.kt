@@ -101,33 +101,83 @@ package com.mozhimen.adaptk.systembar.cons
  * }
  */
 object CProperty {
+    //正常主题
     const val NORMAL = PreProperty.NORMAL//0b0000_0000_0000_0000
-    const val IMMERSED_SOFT = PreProperty.IMMERSED_SOFT or PreProperty.HIDE_ALL
-    const val IMMERSED_HARD = PreProperty.IMMERSED_HARD or PreProperty.HIDE_ALL or PreProperty.OVERLAY_ALL or PreProperty.LAYOUT_DEFAULT
-    const val IMMERSED_HARD_STICKY = PreProperty.IMMERSED_HARD_STICKY or PreProperty.HIDE_ALL or PreProperty.OVERLAY_ALL or PreProperty.LAYOUT_DEFAULT
-    const val TRANSLUCENT_ALL = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT
-    const val TRANSLUCENT_ALL_LIGHT = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
-    /*
-     * 状态栏深色图标
-     */
-    const val TRANSLUCENT_ALL_DARK = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
-    const val TRANSLUCENT_STATUS_BAR = PreProperty.NORMAL or CPropertyOr.OVERLAY_STATUS_BAR  or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT
-    const val TRANSLUCENT_STATUS_BAR_LIGHT = PreProperty.NORMAL or CPropertyOr.OVERLAY_STATUS_BAR  or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
-    /*
-     * 状态栏深色图标
-     */
-    const val TRANSLUCENT_STATUS_BAR_DARK = PreProperty.NORMAL or CPropertyOr.OVERLAY_STATUS_BAR  or CPropertyOr.STATUS_BAR_BG_TRANSLUCENT or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
 
+    //
+
+    //图标深色主题
     const val DARK = PreProperty.NORMAL or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+
+    //图标浅色主题
     const val LIGHT = PreProperty.NORMAL or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
 
+    //
+
+    //软沉浸主题
+    const val IMMERSED_SOFT = PreProperty.IMMERSED_SOFT or PreProperty.HIDE_ALL
+
+    //硬沉浸主题
+    const val IMMERSED_HARD = PreProperty.IMMERSED_HARD or PreProperty.HIDE_ALL or PreProperty.OVERLAY_ALL or PreProperty.LAYOUT_DEFAULT
+
+    //硬粘性沉浸主题
+    const val IMMERSED_HARD_STICKY = PreProperty.IMMERSED_HARD_STICKY or PreProperty.HIDE_ALL or PreProperty.OVERLAY_ALL or PreProperty.LAYOUT_DEFAULT
+
+    //
+
+    //透明悬浮系统栏
+    const val TRANSLUCENT_OVERLAY_ALL = PreProperty.NORMAL or PreProperty.OVERLAY_ALL or CPropertyOr.SYSTEM_BAR_BG_TRANSLUCENT
+
+    //透明悬浮系统栏+白色图标
+    const val TRANSLUCENT_OVERLAY_ALL_LIGHT = TRANSLUCENT_OVERLAY_ALL or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
+
+    //透明悬浮状态栏+深色图标
+    const val TRANSLUCENT_OVERLAY_ALL_DARK = TRANSLUCENT_OVERLAY_ALL or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+
+    //
+
+    //透明悬浮状态栏
+    const val TRANSLUCENT_STATUS_BAR = PreProperty.NORMAL or CPropertyOr.SYSTEM_BAR_BG_TRANSLUCENT
+
+    //透明悬浮状态栏+白色图标
+    const val TRANSLUCENT_STATUS_BAR_LIGHT = TRANSLUCENT_STATUS_BAR or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
+
+    //透明悬浮状态栏+深色图标
+    const val TRANSLUCENT_STATUS_BAR_DARK = TRANSLUCENT_STATUS_BAR or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+
+    //
+
+    //透明悬浮状态栏
+    const val TRANSLUCENT_OVERLAY_STATUS_BAR = PreProperty.NORMAL or CPropertyOr.OVERLAY_STATUS_BAR or CPropertyOr.SYSTEM_BAR_BG_TRANSLUCENT
+
+    //透明悬浮状态栏+白色图标
+    const val TRANSLUCENT_OVERLAY_STATUS_BAR_LIGHT = TRANSLUCENT_OVERLAY_STATUS_BAR or CPropertyOr.THEME_CUSTOM and CPropertyAnd.THEME_LIGHT
+
+    //透明悬浮状态栏+深色图标
+    const val TRANSLUCENT_OVERLAY_STATUS_BAR_DARK = TRANSLUCENT_OVERLAY_STATUS_BAR or CPropertyOr.THEME_CUSTOM or CPropertyOr.THEME_DARK
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
     object PreProperty {
+        //正常
         const val NORMAL = CPropertyOr.NORMAL//0b0000_0000_0000_0000
+
+        //软沉浸
         const val IMMERSED_SOFT = CPropertyOr.IMMERSED_OPEN//0b0100_0000_0000_0000
+
+        //硬沉浸
         const val IMMERSED_HARD = CPropertyOr.IMMERSED_OPEN or CPropertyOr.IMMERSED_HARD//0b0110_0000_0000_0000
+
+        //硬粘性沉浸
         const val IMMERSED_HARD_STICKY = CPropertyOr.IMMERSED_OPEN or CPropertyOr.IMMERSED_HARD or CPropertyOr.IMMERSED_STICKY//0b0111_0000_0000_0000
+
+        //隐藏所有系统栏
         const val HIDE_ALL = CPropertyOr.HIDE_STATUS_BAR or CPropertyOr.HIDE_NAVIGATION_BAR or CPropertyOr.HIDE_TITLE_BAR or CPropertyOr.HIDE_ACTION_BAR//0b0000_1111_0000_0000
+
+        //系统栏悬浮(状态栏,导航栏)
         const val OVERLAY_ALL = CPropertyOr.OVERLAY_STATUS_BAR or CPropertyOr.OVERLAY_NAVIGATION_BAR//0b0000_0000_1100_0000
+
+        //稳定布局+适应系统窗口
         const val LAYOUT_DEFAULT = CPropertyOr.LAYOUT_STABLE or CPropertyOr.FITS_SYSTEM_WINDOWS
     }
 }
