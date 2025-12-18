@@ -9,7 +9,7 @@
         <item name="android:windowBackground">@color/white</item>
     </style>
 
-    <style name="XmlKStyle_Btn" parent="StyleK_MaterialBtn">
+    <style name="XmlKStyle_Btn" parent="StyleK_BtnK_Material">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginHorizontal" tools:targetApi="o">20dp</item>
     </style>
