@@ -18,11 +18,11 @@ import com.mozhimen.kotlin.utilk.android.app.getDecorView
 //简单用法, 直接使用预制的属性
 //@AAdaptKSystemBarProperty(CProperty.IMMERSED_HARD_STICKY)
 //高级用法自己组合
-@AAdaptKSystemBarProperty(CProperty.IMMERSED_HARD_STICKY)
-@AAdaptKSystemBarPropertyAnd(CPropertyAnd.NO_OVERLAY_NAVIGATION_BAR,CPropertyAnd.NO_OVERLAY_STATUS_BAR)
+//@AAdaptKSystemBarProperty(CProperty.IMMERSED_HARD_STICKY)
+//@AAdaptKSystemBarPropertyAnd(CPropertyAnd.NO_OVERLAY_NAVIGATION_BAR,CPropertyAnd.NO_OVERLAY_STATUS_BAR)
 class AdaptKSystemBarActivity : BaseActivityVDB<ActivityAdaptkSystembarBinding>() {
     override fun initFlag() {
-        initAdaptKSystemBar()
+        initAdaptKSystemBar(CProperty.TRANSLUCENT_OVERLAY_STATUS_BAR_LIGHT)
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
