@@ -1,8 +1,8 @@
 package com.mozhimen.adaptk.screen
 
 import com.mozhimen.adaptk.screen.mos.AdaptKScreenArgs
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
-import com.mozhimen.kotlin.lintk.optins.OApiUse_BaseApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiUse_BaseApplication
 import com.mozhimen.stackk.callback.StackKCb
 import com.mozhimen.kotlin.utilk.android.util.UtilKDisplayMetrics
 import com.mozhimen.kotlin.utilk.bases.BaseUtilK
