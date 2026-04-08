@@ -33,13 +33,4 @@ include ':window'
 include ':window-java'
 include ':window-rxjava2'
 include ':window-rxjava3'
-//AAnimKit
-include ':AAnimKit'
-project(':AAnimKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AAnimKit")
-include ':AAnimKit:animk'
-//ARxKit
-include ':ARxKit'
-project(':ARxKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ARxKit")
-include ':ARxKit:rxjava2'
-include ':ARxKit:rxjava3'
 
