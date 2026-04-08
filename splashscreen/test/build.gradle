@@ -36,8 +36,8 @@ android {
 }
 
 dependencies {
-    implementation project(':ASwiftKit:uik:databinding')
-    implementation project(':ASwiftKit:xmlk')
+    implementation 'com.github.mozhimen.ASwiftKit:uik-databinding:2.0.3'
+    implementation 'com.github.mozhimen.ASwiftKit:xmlk:2.0.3'
     implementation project(':splashscreen')
     implementation project(':AAnimKit:animk')
 

@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-    implementation project(':ASwiftKit:basick')
+    implementation 'com.github.mozhimen.KUtilKit:android:0.0.3'
     api 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
 
     testImplementation 'junit:junit:4.13.2'

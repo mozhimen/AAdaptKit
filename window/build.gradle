@@ -31,8 +31,8 @@ android {
 }
 
 dependencies {
-    implementation project(':ALibKit_Jetpack:window')
-    implementation project(':ASwiftKit:basick')
+    implementation 'com.github.mozhimen.ALibKit_Jetpack:window:0.0.7'
+    implementation 'com.github.mozhimen.ASwiftKit:basick:2.0.3'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'

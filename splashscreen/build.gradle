@@ -31,8 +31,8 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.mozhimen.KUtilKit:android:0.0.2'
-    api project(':ALibKit_Jetpack:core-splashscreen')
+    implementation 'com.github.mozhimen.KUtilKit:android:0.0.3'
+    api 'com.github.mozhimen.ALibKit_Jetpack:core-splashscreen:0.0.7'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

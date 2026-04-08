@@ -46,9 +46,8 @@ class SplashActivity2 : BaseActivityVBVM<ActivitySplashBinding, SplashViewModel>
 //            revealActivity(iconView) {
                 startActivityAndFinish<MainActivity>(
                     UtilKActivityOptionsCompat.makeCustomAnimation(
-                        this,
                         com.mozhimen.animk.R.anim.animk_trans_bottom_show,
-                        com.mozhimen.animk.R.anim.animk_set_alpha_no
+                        com.mozhimen.animk.R.anim.animk_set_alpha_no,this
                     ).toBundle()
                 )
 //            }
