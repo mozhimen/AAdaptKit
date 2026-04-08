@@ -31,9 +31,10 @@ android {
 }
 
 dependencies {
+    implementation project(':ARxKit:rxjava2')
+
     implementation 'com.github.mozhimen.ASwiftKit:basick:2.0.3'
     implementation 'com.github.mozhimen.ALibKit_Jetpack:window-rxjava2:0.0.7'
-    implementation project(':ARxKit:rxjava2')
     implementation 'com.github.mozhimen.JUtilKit:android:0.0.8'
 
     testImplementation 'junit:junit:4.13.2'

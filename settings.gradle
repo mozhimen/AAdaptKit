@@ -37,15 +37,6 @@ include ':window-rxjava3'
 include ':AAnimKit'
 project(':AAnimKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AAnimKit")
 include ':AAnimKit:animk'
-//AStackKit
-include ':AStackKit'
-project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
-include ':AStackKit:callback'
-include ':AStackKit:basic'
-//AStackKit
-include ':AStackKit'
-project(':AStackKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AStackKit")
-include ':AStackKit:callback'
 //ARxKit
 include ':ARxKit'
 project(':ARxKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ARxKit")
